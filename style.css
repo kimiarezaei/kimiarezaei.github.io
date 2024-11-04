@@ -1,0 +1,77 @@
+body {
+    background-color: Azure;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: MidnightBlue;
+    font-size: 1.5em;
+    text-align: left;
+    font-family: 'Halvetica', sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 1.2em;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: rgb(100, 9, 96);
+}
+
+.profile-photo {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-left: 2cm;
+    margin-right: 5cm;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+
+.title-size {
+    font-size: 2em;
+}
+
+
+.content-CV {
+    margin-left: 2cm;
+    margin-right: 2cm;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+
+
+.date {
+    display: inline-block;
+    width: 150px;
+    /* Adjust the width as needed */
+    font-weight: bold;
+    color: indigo;
+}
+
+.explanation {
+    display: inline-block;
+    margin-left: 20px;
+    /* Adjust the margin as needed */
+}
+
+.nav-style {
+    background-color: #4ec8dd;
+    text-align: center;
+    font-size: 1.3em;
+    font-style: bold;
+    padding: 15px;
+}
+
+.nav-style a {
+    display: inline-block;
+    margin: 0 10px;
+}
