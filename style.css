@@ -1,13 +1,15 @@
 body {
     background-color: Azure;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     color: MidnightBlue;
     font-size: 1.5em;
     text-align: left;
-    font-family: 'Halvetica', sans-serif;
+    font-family: 'Helvetica', sans-serif;
 }
 
 p {
@@ -25,53 +27,94 @@ a:visited {
 
 .profile-photo {
     float: right;
-    margin-left: 20px;
+    margin-left: 5%;
     margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
 }
 
 .content {
-    margin-left: 2cm;
-    margin-right: 5cm;
-    margin-top: 2cm;
-    margin-bottom: 2cm;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .title-size {
     font-size: 2em;
 }
 
-
 .content-CV {
-    margin-left: 2cm;
-    margin-right: 2cm;
-    margin-top: 2cm;
-    margin-bottom: 2cm;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
-
 
 .date {
     display: inline-block;
-    width: 150px;
-    /* Adjust the width as needed */
+    width: 100%;
     font-weight: bold;
     color: indigo;
 }
 
 .explanation {
     display: inline-block;
-    margin-left: 20px;
-    /* Adjust the margin as needed */
+    margin-left: 0;
 }
 
 .nav-style {
     background-color: #4ec8dd;
     text-align: center;
     font-size: 1.3em;
-    font-style: bold;
+    font-weight: bold;
     padding: 15px;
 }
 
 .nav-style a {
     display: inline-block;
     margin: 0 10px;
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2em;
+        /* Smaller font size for mobile */
+    }
+
+    p {
+        font-size: 1em;
+        /* Adjust paragraph font size */
+    }
+
+    .profile-photo {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+        width: 80%;
+        /* Ensure profile photo scales for small screens */
+    }
+
+    .content,
+    .content-CV {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .date {
+        width: 100%;
+        margin-bottom: 10px;
+        /* Ensure space between date and explanation */
+    }
+
+    .nav-style {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .nav-style a {
+        font-size: 1em;
+        margin: 0 5px;
+    }
 }
