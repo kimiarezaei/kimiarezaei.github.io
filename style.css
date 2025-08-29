@@ -1,8 +1,14 @@
 body {
     background-color: Azure;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    max-width: 600px;
+    /* limits the paragraph width */
+    margin: 0 auto;
+    /* centers it horizontally */
+    padding: 10px;
+    /* optional space inside */
+    line-height: 1.5;
+    /* improves readability */
 }
 
 h1 {
@@ -25,12 +31,21 @@ a:visited {
     color: rgb(100, 9, 96);
 }
 
-.profile-photo {
-    float: right;
+/* .profile-photo {
+    float: center;
     margin-left: 5%;
     margin-bottom: 10px;
     max-width: 100%;
     height: auto;
+} */
+
+.profile-photo {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .content {
@@ -42,6 +57,12 @@ a:visited {
 
 .title-size {
     font-size: 2em;
+}
+
+.title-persian {
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+
 }
 
 .content-CV {
@@ -63,18 +84,102 @@ a:visited {
     margin-left: 0;
 }
 
-.nav-style {
+/* .nav-style {
     background-color: #4ec8dd;
     text-align: center;
     font-size: 1.3em;
     font-weight: bold;
     padding: 15px;
-}
+} */
 
 .nav-style a {
-    display: inline-block;
     margin: 0 10px;
+    padding: 8px 12px;
+    /* space inside each link */
+    background-color: #0277bd;
+    /* link background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    /* optional: rounded corners */
 }
+
+.nav-style a:hover {
+    background-color: #01579b;
+    /* darker on hover */
+}
+
+
+#bottom-right {
+    position: fixed;
+    /* fix to viewport */
+    bottom: 20px;
+    /* distance from bottom */
+    right: 20px;
+    /* distance from right */
+    display: flex;
+    flex-direction: column;
+    /* stack vertically */
+    align-items: flex-end;
+    /* align container and button to right */
+    gap: 10px;
+    /* space between container and button */
+}
+
+#output-container {
+    width: 200px;
+    /* small window */
+    padding: 10px;
+    background-color: PaleTurquoise border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#output {
+    font-size: 1.2em;
+    color: #13065c;
+    margin: 0;
+}
+
+/* button {
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #c430b7;
+} */
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #c430b7;
+    /* main color */
+    color: white;
+    /* text color */
+    border: none;
+    /* remove default border */
+    border-radius: 8px;
+    /* rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* subtle shadow */
+    transition: background-color 0.3s, transform 0.2s;
+    /* smooth hover */
+}
+
+button:hover {
+    background-color: #a02090;
+    /* slightly darker on hover */
+    transform: translateY(-2px);
+    /* subtle lift effect */
+}
+
+button:active {
+    transform: translateY(0);
+    /* press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 
 /* Mobile-friendly styles */
 @media (max-width: 768px) {
