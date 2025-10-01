@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 */ body {
     background-color: Azure;
     font-family: Arial, sans-serif;
@@ -225,4 +226,233 @@ ol {
         margin: 0 auto;
         display: block;
     }
+=======
+*/ body {
+    background-color: Azure;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+/* optional: keep text centered for readability */
+main {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    color: MidnightBlue;
+    font-size: 1.5em;
+    text-align: left;
+    font-family: 'Helvetica', sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 1.2em;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: rgb(100, 9, 96);
+}
+
+.profile-photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.content {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.title-size {
+    font-size: 2em;
+}
+
+.title-persian {
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.content-CV {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.date {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    color: indigo;
+}
+
+.explanation {
+    display: inline-block;
+    margin-left: 0;
+}
+
+
+
+.nav-style a {
+    margin: 0 10px;
+    padding: 8px 12px;
+    /* space inside each link */
+    background-color: #0277bd;
+    /* link background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    /* optional: rounded corners */
+}
+
+.nav-style a:hover {
+    background-color: #01579b;
+    /* darker on hover */
+}
+
+
+#bottom-right {
+    position: fixed;
+    /* fix to viewport */
+    bottom: 20px;
+    /* distance from bottom */
+    right: 20px;
+    /* distance from right */
+    display: flex;
+    flex-direction: column;
+    /* stack vertically */
+    align-items: flex-end;
+    /* align container and button to right */
+    gap: 10px;
+    /* space between container and button */
+}
+
+#output-container {
+    width: 200px;
+    /* small window */
+    padding: 10px;
+    background-color: PaleTurquoise;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#output {
+    font-size: 1em;
+    color: #13065c;
+    margin: 0;
+}
+
+/* button {
+    padding: 8px 16px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #c430b7;
+} */
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #c430b7;
+    /* main color */
+    color: white;
+    /* text color */
+    border: none;
+    /* remove default border */
+    border-radius: 8px;
+    /* rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    /* subtle shadow */
+    transition: background-color 0.3s, transform 0.2s;
+    /* smooth hover */
+}
+
+button:hover {
+    background-color: #a02090;
+    /* slightly darker on hover */
+    transform: translateY(-2px);
+    /* subtle lift effect */
+}
+
+button:active {
+    transform: translateY(0);
+    /* press effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+ul,
+ol {
+    font-size: 1.2em;
+    font-family: inherit;
+    line-height: 1.5;
+    margin-left: 1.5em;
+}
+
+
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .profile-photo img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .content,
+    .content-CV {
+        margin: 1em 5%;
+    }
+
+    .date {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-style {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .nav-style a {
+        font-size: 1em;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-style a {
+        display: block;
+        margin: 5px auto;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+        margin: 0 auto;
+        display: block;
+    }
+>>>>>>> 7408060 (initate commit)
 }
